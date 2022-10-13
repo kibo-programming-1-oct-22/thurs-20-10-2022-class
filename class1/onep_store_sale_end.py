@@ -1,4 +1,4 @@
-# The below are differnt ways to solve this coding exercise.
+# The following are different ways to solve this coding exercise.
 
 # Wednesday in-class code sample
 # https://replit.com/@MohammedSaudi/class1#main.py
