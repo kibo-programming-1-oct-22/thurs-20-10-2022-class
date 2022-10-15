@@ -34,9 +34,9 @@ yummy_books = int(input("How many Yummy books?\n"))
 # print(old_books+fancy_books+yummy_books)
 
 # calculate the total
-total = old_books * BOOK_PRICE * OLD_CAT_DISCOUNT + \
-    fancy_books * BOOK_PRICE * FANCY_CAT_DISCOUNT + \
-    yummy_books * BOOK_PRICE * YUMMY_CAT_DISCOUNT
+total = old_books * BOOK_PRICE * (1 - OLD_CAT_DISCOUNT) + \
+    fancy_books * BOOK_PRICE * (1 - FANCY_CAT_DISCOUNT) + \
+    yummy_books * BOOK_PRICE * (1 - YUMMY_CAT_DISCOUNT)
 
 # print the total
 print("Total: ${:.2f}".format(total))
