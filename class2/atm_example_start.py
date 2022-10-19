@@ -13,6 +13,7 @@ choice = int(input("Enter 1 or 2: "))
 
 if choice == 1:
     amount = float(input("Enter the amount:"))
+    print("amount")
     # TODO 1: Check if the amount is greater than the user balance
     # If so, print "Take your money" and deduct the amount from the user's balance
     # Also print the new balance.
