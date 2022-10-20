@@ -1,5 +1,5 @@
 # assumed user balance
-user_balance = 1234.55
+user_balance = float(1234.55)
 
 # assumed user password
 user_password = "!2A34"
@@ -12,15 +12,25 @@ print("2. Exit")
 choice = int(input("Enter 1 or 2: "))
 
 if choice == 1:
-    amount = float(input("Enter the amount:"))
-    print("amount")
+    amount = float(input("Enter the amount: "))
+    print(amount)
     # TODO 1: Check if the amount is greater than the user balance
+    if amount < user_balance:
+        print("Take your money")
+        newBalance = user_balance - amount
+        print(f"Your new balance is {newBalance}")
+    else:
+        print("Insufficient funds")
     # If so, print "Take your money" and deduct the amount from the user's balance
     # Also print the new balance.
     # Otherwise, print "Insufficient funds"
 
 # TODO 2: Check if the choice is 2
+elif choice == 2:
+    print("Thank you for using our ATM")
 # If so, print "Thank you for using our ATM"
+else:
+    print("Invalid choice")
 # Otherwise, print "Invalid choice"
 
 
